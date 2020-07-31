@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>South Park: Phone Destroyer</title>
+	<!-- <link rel="stylesheet" type="text/css" href=''>//fonts -->
+	<link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <!-- <button id="reset-storage">НЕ клацать</button> -->
+        <img src="../images/south-park-logo-png.png" alt="SPPD-logo" class="sppd-logo">
+        <h1>South Park: Phone Destroyer</h1>
+        <h2>Коллекционная карточная игра</h2>
+    </header>
+    <nav class="secondary-navigation">
+        <div class="add-card-themes__block">
+            <a href="#" id="add-card-theme" class="add-card-theme__link">Предложи тему
+                <img src="../images/icons/add_icon.png" class="add-card-theme__img" alt="Иконка добавить">
+            </a>
+        </div>
+        <label for="filter">Сортировать по теме:</label>
+        <select name="filter" id="filter"> 
+            <option value="card-theme_block">Все темы</option>
+            <option value="Adventure">Приключения</option>
+            <option value="Sci-Fi">Научная фантастика</option>
+            <option value="Neutral">Нейтральная</option>
+            <option value="Mystical">Мистическая</option>
+            <option value="Fantasy">Фентези</option>
+            <option value="Superheroes">Супергерои</option>
+        </select>  
+    <!-- <span href="#" id="abc_sorting">по алфавиту</span> -->
+    <!-- <span href="#" id="reset_abc_sorting">сброс сортировки</span> -->
+    </nav>
+        <div id="card-theme-offer_mist"></div>
+        <form onsubmit="return false" class="card-theme-offer-null" id="card-theme-offer">
+            <img src="../images/icons/close_plate.png" alt="close" id="card-theme-offer_close__img">
+            <h3 class="card-theme-offer__title">Предложи новую колоду!</h3>
+            <label>
+            <span>Название колоды:</span><br><input type="text" id="theme_name"><br>
+            </label>
+            <label>
+               <span>Цвет:</span><br><input type="text" id="theme_color"><br>
+            </label>
+            <label>
+               <span>Описание:</span><br><input type="text" id="theme_description"><br>
+            </label>
+            <label>
+               <span>Логотип:</span><br><input type="text" id="theme_image"><br>
+            </label>
+            <input type="submit" value="Предложить" id="card-theme-offer_get" class="card-theme-offer_sbt">
+        </form>
+        <!-- <div class="themes-nav">
+            <ul class="second-menu">
+                <li class="second-menu__item"><a href="#Adventure"></a></li>
+                <li class="second-menu__item"><a href="#Sci-Fi"></a></li>
+                <li class="second-menu__item"><a href="#Neutral"></a></li>
+                <li class="second-menu__item"><a href="#Mystical"></a></li>
+                <li class="second-menu__item"><a href="#Fantasy"></a></li>
+                <li class="second-menu__item"><a href="#Superheroes"></a></li>
+            </ul>
+        </div> -->
+    <div id="add-new-card_mist"></div>
+        <form action="#" class="new-card_form-null" id="new-card_form">
+            <img src="../images/icons/close_plate.png" alt="close" id="new-card_form_close__img">
+            <h3 class="new-card_form__title">Введите данные карты</h3>
+            <label>
+                <span>Персонаж:</span><br><input type="text" id="character"><br>
+            </label>
+            <label>
+                <span>Класс:</span><br><input type="text" id="class"><br>
+            </label>
+            <label>
+                <span>Редкость:</span><br><input type="text" id="rarity"><br>
+            </label>
+            <label>
+                <span>Изображение карты:</span><br><input type="text" id="card_image"><br>
+            </label>
+            <label>
+                <span>Описание:</span><br><input type="text" id="card_description"><br>
+            </label>
+            <label>
+                <span>Способность:</span><br><input type="text" id="ability"><br>
+            </label>
+            <label>
+                <span>Эффект:</span><br><input type="text" id="effect"><br>
+            </label>
+            <label>
+                <span>Боевой клич:</span><br><input type="text" id="warcry"><br>
+            </label>
+            <label>
+                <span>Стоимость энергии:</span><br><input type="text" id="energy_cost"><br>
+            </label>
+            <label>
+                <span>Здоровье:</span><br><input type="text" id="health"><br>
+            </label>
+            <label>
+                <span>Атака:</span><br><input type="text" id="attack"><br>
+            </label>
+            <label>
+                <span>Дальность:</span><br><input type="text" id="range"><br>
+            </label>
+            <label>
+                <span>Радиус поражения:</span><br><input type="text" id="radius"><br>
+            </label>
+            <label>
+                <span>Время зарядки эффекта:</span><br><input type="text" id="charge_time"><br>
+            </label>
+            <label>
+                <span>Время действия:</span><br><input type="text" id="time"><br>
+            </label>
+            <label>
+                <span>Призываемые юниты:</span><br><input type="text" id="units"><br>
+            </label>
+            <input type="submit" value="Добавить" id="new-card_get__btn">
+        </form>
+      <!-- editing -->
+        <div id="card-editing_mist"></div>
+        <form action="#" id="card-editing_form" class="card-editing_form_null" name="edit">
+             <img src="../images/icons/close_plate.png" alt="close" id="card-editing_form_close__img">
+             <h3 class="card-editing_form__title">Внесите изменения</h3>
+            <label>
+                <span>Описание:</span><br><input type="text" id="create_card_description"><br>
+            </label>
+            <label>
+                <span>Способность:</span><br><input type="text" id="create_ability"><br>
+            </label>
+            <label>
+                <span>Эффект:</span><br><input type="text" id="create_effect"><br>
+            </label>
+            <label>
+                <span>Боевой клич:</span><br><input type="text" id="create_warcry"><br>
+            </label>
+            <label>
+                <span>Стоимость энергии:</span><br><input type="text" id="create_energy_cost"><br>
+            </label>
+            <label>
+                <span>Здоровье:</span><br><input type="text" id="create_health"><br>
+            </label>
+            <label>
+                <span>Атака:</span><br><input type="text" id="create_attack"><br>
+            </label>
+            <label>
+                <span>Дальность:</span><br><input type="text" id="create_range"><br>
+            </label>
+            <label>
+                <span>Радиус поражения:</span><br><input type="text" id="create_radius"><br>
+            </label>
+            <label>
+                <span>Время зарядки эффекта:</span><br><input type="text" id="create_charge_time"><br>
+            </label>
+            <label>
+                <span>Время действия:</span><br><input type="text" id="create_time"><br>
+            </label>
+            <label>
+                <span>Призываемые юниты:</span><br><input type="text" id="create_units"><br>
+            </label>
+            <input type="submit" value="Сохранить" id="card-editing_form__create" class="card-editing_form_sbt"  name='saveCard'>
+        </form>
+	<script type="text/javascript" src='main.js'></script>
+    <!-- <footer>
+        <img src="images/kindpng_3395288.png">
+    </footer> -->
+</body>
+</html>

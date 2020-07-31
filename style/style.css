@@ -1,0 +1,360 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*fonts*/
+@font-face {
+	font-family: 'South Park Smilie version';
+	font-style: normal;
+	font-weight: normal;
+	src: local('../fonts/south-park-cufonfonts-webfont/South Park Smilie version'), url('../fonts/south-park-cufonfonts-webfont/south park.woff') format('woff');
+}
+@font-face {
+	font-family: 'South Park Cyrillic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('../fonts/SouthParkCyrillic'), url('../fonts/SouthParkCyrillic.ttf') format('ttf');
+}
+body {
+	font-family: 'South Park Cyrillic';
+	font-size: 16px;
+}
+header {
+	display: inline-block;
+	height: 150px;
+	width: 100%;
+	background-color: #26a99d;
+	/*border-bottom: 2px solid #4f4f4f;*/
+}
+a.header__logo-link {
+	width: 210px;
+	height: 210px; 
+	float: right;
+}
+.sppd-logo {
+	width: 210px;
+	height: 210px; 
+	float: right;
+}
+h1 {
+	font-family: 'South Park Smilie version';
+	font-size: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+h2 {
+	font-size: 24px;
+	text-align: center;
+}
+h2.theme-name {
+	font-size: 20px;
+	text-align: center;
+}
+h3.theme-color {
+	font-size: 14px;
+}
+/*#reset-storage {
+	float: right;
+}*/
+.secondary-navigation {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	/* border-bottom: 2px solid #4f4f4f; */
+	padding-bottom: 3px;
+}
+.add-card-themes__block {
+	display: inline-block;
+	width: 250px;
+	height: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.add-card-theme__link  {
+	display: block;
+	width: 250px;
+	height: 50px;
+	text-decoration: none;
+	color: black;
+	line-height: 50px;
+	font-size: 25px;
+	vertical-align: middle;
+}
+.add-card-theme__link:hover {
+	color: green;
+}
+.add-card-theme__img {
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+/*themes nav*/
+/*main block*/
+.card-theme_block__wrapper {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	margin: 20px auto 20px auto;
+}
+.card-theme_block {
+	display: block;
+	position: relative;
+	width: calc(100% - 30px);
+	padding: 10px;
+	margin: 5px;
+	border: 5px solid black;
+	border-radius: 10px;
+}
+.Adventure {
+	border-color: #4e83c9;
+}
+.Sci-Fi {
+	border-color: #ee703d;
+}
+.Neutral {
+	border-color: #a4988c;
+}
+.Mystical {
+	border-color: #61a355;
+}
+.Fantasy {
+	border-color: #e96174;
+}
+.Superheroes {
+	border-color: #5f196f;
+}
+.theme-color {
+	margin: 2px;
+}
+.theme-description {
+	margin: 2px;
+}
+.cards-article {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 2px;
+}
+.card-theme_block__logo {
+	display: block;
+	margin: 5px;
+	width: 80px;
+	height: 80px;
+}
+.cards_preview {
+	width: 120px;
+	height: 170px;
+	margin: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	-moz-box-shadow:0 0 20px #b3b3b3;
+	-webkit-box-shadow:0 0 20px #b3b3b3;
+	box-shadow:0 0 20px #b3b3b3;
+	transition: 0.1s;
+}
+/*navigation effects*/
+.cards_preview:hover {
+	width: 124px;
+	height: 174px;
+	margin: 3px;
+}
+.Adventure > div.all-cards__wrapper > div.card-icon_small > img.cards_preview:hover {
+	-moz-box-shadow:0 0 20px #4e83c9;
+	-webkit-box-shadow:0 0 20px #4e83c9;
+	box-shadow:0 0 20px #4e83c9;
+}
+.Sci-Fi > div.all-cards__wrapper > div.card-icon_small > img.cards_preview:hover {
+	-moz-box-shadow:0 0 20px #ee703d;
+	-webkit-box-shadow:0 0 20px #ee703d;
+	box-shadow:0 0 20px #ee703d;
+}
+.Neutral > div.all-cards__wrapper > div.card-icon_small > img.cards_preview:hover {
+	-moz-box-shadow:0 0 20px #a4988c;
+	-webkit-box-shadow:0 0 20px #a4988c;
+	box-shadow:0 0 20px #a4988c;
+}
+.Mystical > div.all-cards__wrapper > div.card-icon_small > img.cards_preview:hover {
+	-moz-box-shadow:0 0 20px #61a355;
+	-webkit-box-shadow:0 0 20px #61a355;
+	box-shadow:0 0 20px #61a355;
+}
+.Fantasy > div.all-cards__wrapper > div.card-icon_small > img.cards_preview:hover {
+	-moz-box-shadow:0 0 20px #e96174;
+	-webkit-box-shadow:0 0 20px #e96174;
+	box-shadow:0 0 20px #e96174;
+}
+.Superheroes > div.all-cards__wrapper > div.card-icon_small > img.cards_preview:hover {
+	-moz-box-shadow:0 0 20px #5f196f;
+	-webkit-box-shadow:0 0 20px #5f196f;
+	box-shadow:0 0 20px #5f196f;
+}
+/*controls block*/
+.card-theme_block_controls {
+	display: inline-block;
+	width: calc(100% - 30px);
+	position: relative;
+	bottom: 0px;
+	height: 60px;
+	margin: 20px 2px 20px auto;
+}
+.card-theme_block__create__link {
+	display: block;
+	text-decoration: none;
+	color: black;
+	line-height: 50px;
+	font-size: 25px;
+	vertical-align: middle;
+}
+.card-theme_block__create {
+	width: 36px;
+	height: 31px;
+	vertical-align: middle;
+}
+.card-info__editing {
+	width: 85px;
+	height: 31px;
+	float: right;
+	cursor: pointer;
+}
+.card-info__delete {
+	width: 31px;
+	height: 31px;
+	float: left;
+	cursor: pointer;
+}
+/*forms*/
+/*add card form stylesheet*/
+.new-card_form-null {
+	display: none;
+}
+.new-card_form__open {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+	width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Cards info*/
+.card-info__wrapper-null {
+	display: none;
+}
+.card-info__wrapper {
+	display: block;
+	position: absolute;
+	border-radius: 20px;
+	z-index: 1000;
+	width: 700px;
+	padding: 10px;
+	background-color: #fff;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.card-info__image {
+	margin: 5px 10px 10px 5px;
+	width: 310px;
+	height: 434px;
+	border-radius: 20px;
+	float: left;
+}
+.card-info__title {
+	font-size: 25px;
+	margin-top: 5px;
+}
+.card-info__about-card p {
+	font-weight: bold;
+	margin-top: 3px;
+}
+.card-info__about-card span {
+	font-weight: normal;
+	text-align: justify;
+}
+.card-info_btn__close {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	width: 51px;
+	height: 51px;
+	cursor: pointer;
+}
+/*New themes*/
+.card-theme-offer-null {
+	display: none;
+}
+.card-theme-offer__open {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+	width: 600px;
+	max-width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Edit card*/
+.card-editing_form_null {
+	display: none;
+}
+.card-editing_form__open {
+    display: block;
+    position: absolute;
+    z-index: 1100;
+    width: 600px;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    left: 25%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+.card-theme-offer__title {
+	font-size: 25px;
+	margin-top: 5px;
+	text-align: center;
+}
+/*close plates*/
+#new-card_form_close__img, #card-theme-offer_close__img, #card-editing_form_close__img {
+	position: absolute;
+	top: 3px;
+	right: 5px;
+	width: 51px;
+	height: 51px;
+	cursor: pointer;
+}
+/*overlay*/
+.mist-background {
+    position: fixed; 
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    animation-duration: 0.5s;
+    animation-name: fadeInDown;
+}
+/*.card-theme-offer_mist{}
+.add-new-card_mist{}*/
+
+/*sorting and filter*/
+/*#abc_sorting{
+    margin-left: 35px;
+    padding: 8px 10px 9px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+#abc_sorting:hover{
+    border: 1px solid red;
+}*/
+
+.footer__wrapper {
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+}
+.footer-img {
+	display: block;
+	margin: 10px auto;
+}

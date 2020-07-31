@@ -1,0 +1,15 @@
+{
+  "name": "sppd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "devServer": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KennyFMX",
+  "license": "ISC",
+  "devDependencies": {}
+}
